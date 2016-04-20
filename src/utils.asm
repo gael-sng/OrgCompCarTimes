@@ -119,12 +119,16 @@ GetChar:
     push fr
     push r0
     push r1
+    push r2
 
     loadn r1, #255
+    loadn r2, #0
 
     ; Esperando apertar a tecla
     GetChar_Loop1:
         inchar r0
+        cmp r0, r2
+        jeq GetChar_Loop1
         cmp r0, r1
         jeq GetChar_Loop1
 
@@ -136,6 +140,7 @@ GetChar:
         cmp r0, r1
         jne GetChar_Loop2
 
+    pop r2
     pop r1
     pop r0
     pop fr

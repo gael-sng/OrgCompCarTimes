@@ -148,42 +148,42 @@ PrintError:
 
     jnz Dead
         loadn r1, #Screen_10_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     Dead:
     dec r3
     jnz FiveErrors_EndIf
         loadn r1, #Screen_9_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     FiveErrors_EndIf:
     dec r3
     jnz FourErrors_EndIf
         loadn r1, #Screen_8_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     FourErrors_EndIf:
     dec r3
     jnz ThreeErrors_EndIf
         loadn r1, #Screen_7_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     ThreeErrors_EndIf:
     dec r3
     jnz TwoErrors_EndIf
         loadn r1, #Screen_6_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     TwoErrors_EndIf:
     dec r3
     jnz OneError_EndIf
         loadn r1, #Screen_5_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     OneError_EndIf:
@@ -224,13 +224,19 @@ main:
 
     ; Imprimindo a tela do jogo
     loadn r1, #Screen_2_Line29 ; String address
-    loadn r2, #256 ; Color
+    loadn r2, #1024 ; Color
     loadn r6, #' ' ; Character to be skipped
     call PrintScreen
 
     ; Imprimindo a tela do jogo
     loadn r1, #Screen_4_Line29 ; String address
     loadn r2, #0 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    ; Imprimindo a tela do jogo
+    loadn r1, #Screen_12_Line29 ; String address
+    loadn r2, #2304 ; Color
     loadn r6, #' ' ; Character to be skipped
     call PrintScreen
 
@@ -270,7 +276,8 @@ main:
             call PrintError
 
             jnz Forca_EndIf
-            ; Game Over
+            ; Seg fault
+            jmp Dead2 ; Dead - Game Over
         Forca_EndIf:
 
         call UpdateTryList
@@ -278,10 +285,47 @@ main:
         cmp r4, r7  
     jne Forca_Loop
 
-    loadn r0, #610
-    loadn r1, #DeuBom
-    loadn r2, #512
+    loadn r0, #614 ; Position
+    loadn r1, #DeuBom ; String
+    loadn r2, #512 ; Color
     loadn r6, #' ' ; Character to be skipped
     call PrintString
+
+    jmp End
+
+    Dead2:
+    ;loadn r0, #575 ; Position
+    ;loadn r1, #GameOver ; String
+    ;loadn r2, #2304 ; Color
+    ;loadn r6, #' ' ; Character to be skipped
+    ;call PrintString
+
+    call EraseScreen
+
+    ; Imprimindo a forca
+    loadn r1, #Screen_3_Line29 ; String address
+    loadn r2, #1024 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    ; Imprimindo a corda esticada
+    loadn r1, #Screen_13_Line29 ; String address
+    loadn r2, #0 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    ; Imprimindo o fogo
+    loadn r1, #Screen_12_Line29 ; String address
+    loadn r2, #2304 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    ; Imprimindo o carinha
+    loadn r1, #Screen_11_Line29 ; String address
+    loadn r2, #768 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    End:
     
     halt

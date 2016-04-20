@@ -16,3 +16,4 @@ TryList: string "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 AuxList1: string "  A B C D E F G H I J K L M  0 1 2 3 4  " ; 1040
 AuxList2: string "  N O P Q R S T U V W X Y Z  5 6 7 8 9  " ; 1120
 DeuBom: string "Deu bom!"
+GameOver: string "Dead!"

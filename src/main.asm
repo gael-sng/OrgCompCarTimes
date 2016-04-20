@@ -15,7 +15,8 @@ TypeInAWord: string "Escreva uma palavra e pressione ENTER:"
 TryList: string "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 AuxList1: string "  A B C D E F G H I J K L M  0 1 2 3 4  " ; 1040
 AuxList2: string "  N O P Q R S T U V W X Y Z  5 6 7 8 9  " ; 1120
-DeuBom: string "Deu bom!"; Tela inteira 30x40
+DeuBom: string "Deu bom!"
+GameOver: string "Dead!"; Tela inteira 30x40
 ; Interface
 Screen_1_Line0 : string " ______________________________________ " ; 0
 Screen_1_Line1 : string "|                                      |" ; 40
@@ -148,10 +149,10 @@ Screen_5_Line1 : string "                                        "
 Screen_5_Line2 : string "                                        "
 Screen_5_Line3 : string "                                        "
 Screen_5_Line4 : string "                                        "
-Screen_5_Line5 : string "                 (                      "
-Screen_5_Line6 : string "                 )                      "
-Screen_5_Line7 : string "                 (                      "
-Screen_5_Line8 : string "                 )                      "
+Screen_5_Line5 : string "                                        "
+Screen_5_Line6 : string "                                        "
+Screen_5_Line7 : string "                                        "
+Screen_5_Line8 : string "                                        "
 Screen_5_Line9 : string "                ( )                     "
 Screen_5_Line10: string "                                        "
 Screen_5_Line11: string "                                        "
@@ -180,10 +181,10 @@ Screen_6_Line1 : string "                                        "
 Screen_6_Line2 : string "                                        "
 Screen_6_Line3 : string "                                        "
 Screen_6_Line4 : string "                                        "
-Screen_3_Line5 : string "                 (                      "
-Screen_6_Line6 : string "                 )                      "
-Screen_6_Line7 : string "                 (                      "
-Screen_6_Line8 : string "                 )                      "
+Screen_3_Line5 : string "                                        "
+Screen_6_Line6 : string "                                        "
+Screen_6_Line7 : string "                                        "
+Screen_6_Line8 : string "                                        "
 Screen_6_Line9 : string "                ( )                     "
 Screen_6_Line10: string "                 W                      "
 Screen_6_Line11: string "                 A                      "
@@ -212,10 +213,10 @@ Screen_7_Line1 : string "                                        "
 Screen_7_Line2 : string "                                        "
 Screen_7_Line3 : string "                                        "
 Screen_7_Line4 : string "                                        "
-Screen_7_Line5 : string "                 (                      "
-Screen_7_Line6 : string "                 )                      "
-Screen_7_Line7 : string "                 (                      "
-Screen_7_Line8 : string "                 )                      "
+Screen_7_Line5 : string "                                        "
+Screen_7_Line6 : string "                                        "
+Screen_7_Line7 : string "                                        "
+Screen_7_Line8 : string "                                        "
 Screen_7_Line9 : string "                ( )                     "
 Screen_7_Line10: string "                 W                      "
 Screen_7_Line11: string "                 A                      "
@@ -244,10 +245,10 @@ Screen_8_Line1 : string "                                        "
 Screen_8_Line2 : string "                                        "
 Screen_8_Line3 : string "                                        "
 Screen_8_Line4 : string "                                        "
-Screen_8_Line5 : string "                 (                      "
-Screen_8_Line6 : string "                 )                      "
-Screen_8_Line7 : string "                 (                      "
-Screen_8_Line8 : string "                 )                      "
+Screen_8_Line5 : string "                                        "
+Screen_8_Line6 : string "                                        "
+Screen_8_Line7 : string "                                        "
+Screen_8_Line8 : string "                                        "
 Screen_8_Line9 : string "                ( )                     "
 Screen_8_Line10: string "                 W                      "
 Screen_8_Line11: string "                 A                      "
@@ -276,10 +277,10 @@ Screen_9_Line1 : string "                                        "
 Screen_9_Line2 : string "                                        "
 Screen_9_Line3 : string "                                        "
 Screen_9_Line4 : string "                                        "
-Screen_9_Line5 : string "                 (                      "
-Screen_9_Line6 : string "                 )                      "
-Screen_9_Line7 : string "                 (                      "
-Screen_9_Line8 : string "                 )                      "
+Screen_9_Line5 : string "                                        "
+Screen_9_Line6 : string "                                        "
+Screen_9_Line7 : string "                                        "
+Screen_9_Line8 : string "                                        "
 Screen_9_Line9 : string "                ( )                     "
 Screen_9_Line10: string "                 W\\                     "
 Screen_9_Line11: string "                 A                      "
@@ -308,10 +309,10 @@ Screen_10_Line1 : string "                                        "
 Screen_10_Line2 : string "                                        "
 Screen_10_Line3 : string "                                        "
 Screen_10_Line4 : string "                                        "
-Screen_10_Line5 : string "                 (                      "
-Screen_10_Line6 : string "                 )                      "
-Screen_10_Line7 : string "                 (                      "
-Screen_10_Line8 : string "                 )                      "
+Screen_10_Line5 : string "                                        "
+Screen_10_Line6 : string "                                        "
+Screen_10_Line7 : string "                                        "
+Screen_10_Line8 : string "                                        "
 Screen_10_Line9 : string "                ( )                     "
 Screen_10_Line10: string "                /W\\                     "
 Screen_10_Line11: string "                 A                      "
@@ -340,13 +341,13 @@ Screen_11_Line1 : string "                                        "
 Screen_11_Line2 : string "                                        "
 Screen_11_Line3 : string "                                        "
 Screen_11_Line4 : string "                                        "
-Screen_11_Line5 : string "                 (                      "
-Screen_11_Line6 : string "                 )                      "
-Screen_11_Line7 : string "                 (                      "
-Screen_11_Line8 : string "                 (                      "
-Screen_11_Line9 : string "                 )                      "
-Screen_11_Line10: string "                 (                      "
-Screen_11_Line11: string "                 )                      "
+Screen_11_Line5 : string "                                        "
+Screen_11_Line6 : string "                                        "
+Screen_11_Line7 : string "                                        "
+Screen_11_Line8 : string "                                        "
+Screen_11_Line9 : string "                                        "
+Screen_11_Line10: string "                                        "
+Screen_11_Line11: string "                                        "
 Screen_11_Line12: string "                ( )                     "
 Screen_11_Line13: string "                /W\\                     "
 Screen_11_Line14: string "                 A                      "
@@ -396,7 +397,38 @@ Screen_12_Line25: string "                                        "
 Screen_12_Line26: string "                                        "
 Screen_12_Line27: string "                                        "
 Screen_12_Line28: string "                                        "
-Screen_12_Line29: string "                                        "; Prints the entire Screen
+Screen_12_Line29: string "                                        "
+
+Screen_13_Line0 : string "                                        "
+Screen_13_Line1 : string "                                        "
+Screen_13_Line2 : string "                                        "
+Screen_13_Line3 : string "                                        "
+Screen_13_Line4 : string "                                        "
+Screen_13_Line5 : string "                 (                      "
+Screen_13_Line6 : string "                 )                      "
+Screen_13_Line7 : string "                 (                      "
+Screen_13_Line8 : string "                 (                      "
+Screen_13_Line9 : string "                 )                      "
+Screen_13_Line10: string "                 (                      "
+Screen_13_Line11: string "                 )                      "
+Screen_13_Line12: string "                                        "
+Screen_13_Line13: string "                                        "
+Screen_13_Line14: string "                                        "
+Screen_13_Line15: string "                                        "
+Screen_13_Line16: string "                                        "
+Screen_13_Line17: string "                                        "
+Screen_13_Line18: string "                                        "
+Screen_13_Line19: string "                                        "
+Screen_13_Line21: string "                                        "
+Screen_13_Line20: string "                                        "
+Screen_13_Line22: string "                                        "
+Screen_13_Line23: string "                                        "
+Screen_13_Line24: string "                                        "
+Screen_13_Line25: string "                                        "
+Screen_13_Line26: string "                                        "
+Screen_13_Line27: string "                                        "
+Screen_13_Line28: string "                                        "
+Screen_13_Line29: string "                                        "; Prints the entire Screen
 ; r1 should contain last string's address
 ; r2 should contain a color code
 ; r6 should contain the character to be skipped
@@ -517,12 +549,16 @@ GetChar:
     push fr
     push r0
     push r1
+    push r2
 
     loadn r1, #255
+    loadn r2, #0
 
     ; Esperando apertar a tecla
     GetChar_Loop1:
         inchar r0
+        cmp r0, r2
+        jeq GetChar_Loop1
         cmp r0, r1
         jeq GetChar_Loop1
 
@@ -534,6 +570,7 @@ GetChar:
         cmp r0, r1
         jne GetChar_Loop2
 
+    pop r2
     pop r1
     pop r0
     pop fr
@@ -734,42 +771,42 @@ PrintError:
 
     jnz Dead
         loadn r1, #Screen_10_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     Dead:
     dec r3
     jnz FiveErrors_EndIf
         loadn r1, #Screen_9_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     FiveErrors_EndIf:
     dec r3
     jnz FourErrors_EndIf
         loadn r1, #Screen_8_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     FourErrors_EndIf:
     dec r3
     jnz ThreeErrors_EndIf
         loadn r1, #Screen_7_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     ThreeErrors_EndIf:
     dec r3
     jnz TwoErrors_EndIf
         loadn r1, #Screen_6_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     TwoErrors_EndIf:
     dec r3
     jnz OneError_EndIf
         loadn r1, #Screen_5_Line29 ; String address
-        loadn r2, #2304 ; Color
+        loadn r2, #768 ; Color
         loadn r6, #' ' ; Character to be skipped
         call PrintScreen
     OneError_EndIf:
@@ -810,13 +847,19 @@ main:
 
     ; Imprimindo a tela do jogo
     loadn r1, #Screen_2_Line29 ; String address
-    loadn r2, #256 ; Color
+    loadn r2, #1024 ; Color
     loadn r6, #' ' ; Character to be skipped
     call PrintScreen
 
     ; Imprimindo a tela do jogo
     loadn r1, #Screen_4_Line29 ; String address
     loadn r2, #0 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    ; Imprimindo a tela do jogo
+    loadn r1, #Screen_12_Line29 ; String address
+    loadn r2, #2304 ; Color
     loadn r6, #' ' ; Character to be skipped
     call PrintScreen
 
@@ -856,7 +899,8 @@ main:
             call PrintError
 
             jnz Forca_EndIf
-            ; Game Over
+            ; Seg fault
+            jmp Dead2 ; Dead - Game Over
         Forca_EndIf:
 
         call UpdateTryList
@@ -864,10 +908,47 @@ main:
         cmp r4, r7  
     jne Forca_Loop
 
-    loadn r0, #610
-    loadn r1, #DeuBom
-    loadn r2, #512
+    loadn r0, #614 ; Position
+    loadn r1, #DeuBom ; String
+    loadn r2, #512 ; Color
     loadn r6, #' ' ; Character to be skipped
     call PrintString
+
+    jmp End
+
+    Dead2:
+    ;loadn r0, #575 ; Position
+    ;loadn r1, #GameOver ; String
+    ;loadn r2, #2304 ; Color
+    ;loadn r6, #' ' ; Character to be skipped
+    ;call PrintString
+
+    call EraseScreen
+
+    ; Imprimindo a forca
+    loadn r1, #Screen_3_Line29 ; String address
+    loadn r2, #1024 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    ; Imprimindo a corda esticada
+    loadn r1, #Screen_13_Line29 ; String address
+    loadn r2, #0 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    ; Imprimindo o fogo
+    loadn r1, #Screen_12_Line29 ; String address
+    loadn r2, #2304 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    ; Imprimindo o carinha
+    loadn r1, #Screen_11_Line29 ; String address
+    loadn r2, #768 ; Color
+    loadn r6, #' ' ; Character to be skipped
+    call PrintScreen
+
+    End:
     
     halt
