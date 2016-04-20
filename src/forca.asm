@@ -94,11 +94,14 @@ UpdateTryList:
     push r4
     push r5
     push r6
+    push r7
 
     loadn r0, #1040 ; Screen Position
     loadn r1, #AuxList1 ; String Address
     loadn r3, #'\0' ; Terminador
     load r5, Letter ; Letra inserida
+    loadn r7, #32 ; Dif entre maiúsculo e minúsculo
+    sub r5, r5, r7
 
     UpdateTryList_Loop1:
         loadi r4, r1 ; Carregando a letra indexada por r1 para r4
@@ -128,6 +131,7 @@ UpdateTryList:
         cmp r4, r3 ; Comparando com o '\0'
     jne UpdateTryList_Loop2
 
+    pop r7
     pop r6
     pop r5
     pop r4
